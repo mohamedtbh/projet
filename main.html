@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Générateur de Mèmes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Générateur de Mèmes</h1>
+        </header>
+        <div class="content">
+            <div class="form-group">
+                <label for="imageUpload">Choisir une image :</label>
+                <input type="file" id="imageUpload" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="textToAdd">Ajouter du texte :</label>
+                <textarea id="textToAdd" placeholder="Entrez votre texte ici..."></textarea>
+            </div>
+            <div class="form-group">
+                <label for="textColor">Couleur du texte :</label>
+                <input type="color" id="textColor" value="#ffffff">
+            </div>
+            <div class="form-group">
+                <label for="textPosition">Position du texte :</label>
+                <select id="textPosition">
+                    <option value="bottom">En bas</option>
+                    <option value="middle">Au milieu</option>
+                    <option value="top">En haut</option>
+                </select>
+            </div>
+            <button id="previewButton">Aperçu</button>
+            <button id="downloadButton" style="display: none;">Télécharger Mème</button>
+            <button id="facebookShareButton" style="display: none;">Partager sur Facebook</button>
+            <button id="twitterShareButton" style="display: none;">Partager sur Twitter</button>
+            <button id="galleryButton">Voir la galerie</button>
+        </div>
+        <div id="previewArea"></div>
+        <div id="gallery" style="display: none;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
